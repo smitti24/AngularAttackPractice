@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AgentSystemModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Agent">
+    <Key>
+      <PropertyRef Name="AgentID" />
+    </Key>
+    <Property Name="AgentID" Type="Guid" Nullable="false" />
+    <Property Name="Codename" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EncyptedPassword" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AgentStatusID" Type="Guid" Nullable="false" />
+    <Property Name="Photo" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="AgentLocations" Relationship="Self.FK_AgentLocation_Agent" FromRole="Agent" ToRole="AgentLocation" />
+    <NavigationProperty Name="AgentStatus" Relationship="Self.FK_AgentStatus_Agent" FromRole="Agent" ToRole="AgentStatus" />
+    <NavigationProperty Name="Goals" Relationship="Self.FK_MissionGoal_Agent" FromRole="Agent" ToRole="Goal" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Surname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Achievement" Relationship="AgentSystemModel.FK_AgentAchievement_Agent" FromRole="Agent" ToRole="Achievement" />
+    <NavigationProperty Name="Message" Relationship="AgentSystemModel.FK_Message_Agent" FromRole="Agent" ToRole="Message" />
+  </EntityType>
+  <EntityType Name="AgentLocation">
+    <Key>
+      <PropertyRef Name="AgentLocationID" />
+    </Key>
+    <Property Name="AgentLocationID" Type="Guid" Nullable="false" />
+    <Property Name="DateRecorded" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="AgentID" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="Agent" Relationship="Self.FK_AgentLocation_Agent" FromRole="AgentLocation" ToRole="Agent" />
+    <NavigationProperty Name="Coordinates" Relationship="AgentSystemModel.FK_AgentLocationCoordinate_AgentLocation" FromRole="AgentLocation" ToRole="AgentLocationCoordinate" />
+  </EntityType>
+  <EntityType Name="AgentStatus">
+    <Key>
+      <PropertyRef Name="AgentStatusID" />
+    </Key>
+    <Property Name="AgentStatusID" Type="Guid" Nullable="false" />
+    <Property Name="AgentStatusText" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Coordinate">
+    <Key>
+      <PropertyRef Name="CoordinateID" />
+    </Key>
+    <Property Name="CoordinateID" Type="Guid" Nullable="false" />
+    <Property Name="X" Type="Decimal" Precision="18" Scale="9" Nullable="false" />
+    <Property Name="Y" Type="Decimal" Precision="18" Scale="9" Nullable="false" />
+    <NavigationProperty Name="AgentLocationCoordinate" Relationship="AgentSystemModel.FK_AgentLocationCoordinate_Coordinate" FromRole="Coordinate" ToRole="AgentLocationCoordinate" />
+  </EntityType>
+  <EntityType Name="Goal">
+    <Key>
+      <PropertyRef Name="GoalID" />
+    </Key>
+    <Property Name="GoalID" Type="Guid" Nullable="false" />
+    <Property Name="MissionID" Type="Guid" Nullable="false" />
+    <Property Name="AgentID" Type="Guid" Nullable="false" />
+    <Property Name="CoordinateID" Type="Guid" Nullable="false" />
+    <Property Name="AgentFeedback" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="AgentCompletedFlag" Type="Boolean" Nullable="false" />
+    <Property Name="CompletionDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Agent" Relationship="Self.FK_MissionGoal_Agent" FromRole="Goal" ToRole="Agent" />
+    <NavigationProperty Name="Coordinate" Relationship="Self.FK_MissionGoal_Coordinate" FromRole="Goal" ToRole="Coordinate" />
+    <NavigationProperty Name="Mission" Relationship="AgentSystemModel.FK_MissionGoal_Mission" FromRole="Goal" ToRole="Mission" />
+    <NavigationProperty Name="Message" Relationship="AgentSystemModel.FK_Message_MissionGoal" FromRole="Goal" ToRole="Message" />
+  </EntityType>
+  <EntityType Name="Mission">
+    <Key>
+      <PropertyRef Name="MissionID" />
+    </Key>
+    <Property Name="MissionID" Type="Guid" Nullable="false" />
+    <Property Name="MissionName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MissionStatusID" Type="Guid" Nullable="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CompletionDate" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="MissionStatus" Relationship="Self.FK_Mission_MissionStatus" FromRole="Mission" ToRole="MissionStatus" />
+    <NavigationProperty Name="Goals" Relationship="AgentSystemModel.FK_MissionGoal_Mission" FromRole="Mission" ToRole="Goal" />
+  </EntityType>
+  <EntityType Name="MissionStatus">
+    <Key>
+      <PropertyRef Name="MissionStatusID" />
+    </Key>
+    <Property Name="MissionStatusID" Type="Guid" Nullable="false" />
+    <Property Name="MissionStatusText" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_AgentLocation_Agent">
+    <End Role="Agent" Type="Self.Agent" Multiplicity="1" />
+    <End Role="AgentLocation" Type="Self.AgentLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Agent">
+        <PropertyRef Name="AgentID" />
+      </Principal>
+      <Dependent Role="AgentLocation">
+        <PropertyRef Name="AgentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AgentStatus_Agent">
+    <End Role="AgentStatus" Type="Self.AgentStatus" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Agent" Type="Self.Agent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AgentStatus">
+        <PropertyRef Name="AgentStatusID" />
+      </Principal>
+      <Dependent Role="Agent">
+        <PropertyRef Name="AgentStatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MissionGoal_Agent">
+    <End Role="Agent" Type="Self.Agent" Multiplicity="1" />
+    <End Role="Goal" Type="Self.Goal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Agent">
+        <PropertyRef Name="AgentID" />
+      </Principal>
+      <Dependent Role="Goal">
+        <PropertyRef Name="AgentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MissionGoal_Coordinate">
+    <End Role="Coordinate" Type="Self.Coordinate" Multiplicity="1" />
+    <End Role="Goal" Type="Self.Goal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Coordinate">
+        <PropertyRef Name="CoordinateID" />
+      </Principal>
+      <Dependent Role="Goal">
+        <PropertyRef Name="CoordinateID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Mission_MissionStatus">
+    <End Role="MissionStatus" Type="Self.MissionStatus" Multiplicity="1" />
+    <End Role="Mission" Type="Self.Mission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MissionStatus">
+        <PropertyRef Name="MissionStatusID" />
+      </Principal>
+      <Dependent Role="Mission">
+        <PropertyRef Name="MissionStatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="AgentSystem" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Agent" EntityType="Self.Agent" />
+    <EntitySet Name="AgentLocation" EntityType="Self.AgentLocation" />
+    <EntitySet Name="AgentStatus" EntityType="Self.AgentStatus" />
+    <EntitySet Name="Coordinate" EntityType="Self.Coordinate" />
+    <EntitySet Name="Goal" EntityType="Self.Goal" />
+    <EntitySet Name="Mission" EntityType="Self.Mission" />
+    <EntitySet Name="MissionStatus" EntityType="Self.MissionStatus" />
+    <AssociationSet Name="FK_AgentLocation_Agent" Association="Self.FK_AgentLocation_Agent">
+      <End Role="Agent" EntitySet="Agent" />
+      <End Role="AgentLocation" EntitySet="AgentLocation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AgentStatus_Agent" Association="Self.FK_AgentStatus_Agent">
+      <End Role="AgentStatus" EntitySet="AgentStatus" />
+      <End Role="Agent" EntitySet="Agent" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MissionGoal_Agent" Association="Self.FK_MissionGoal_Agent">
+      <End Role="Agent" EntitySet="Agent" />
+      <End Role="Goal" EntitySet="Goal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MissionGoal_Coordinate" Association="Self.FK_MissionGoal_Coordinate">
+      <End Role="Coordinate" EntitySet="Coordinate" />
+      <End Role="Goal" EntitySet="Goal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Mission_MissionStatus" Association="Self.FK_Mission_MissionStatus">
+      <End Role="MissionStatus" EntitySet="MissionStatus" />
+      <End Role="Mission" EntitySet="Mission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MissionGoal_Mission" Association="AgentSystemModel.FK_MissionGoal_Mission">
+      <End Role="Mission" EntitySet="Mission" />
+      <End Role="Goal" EntitySet="Goal" />
+    </AssociationSet>
+    <EntitySet Name="AgentLocationCoordinate" EntityType="AgentSystemModel.AgentLocationCoordinate" />
+    <AssociationSet Name="FK_AgentLocationCoordinate_AgentLocation" Association="AgentSystemModel.FK_AgentLocationCoordinate_AgentLocation">
+      <End Role="AgentLocation" EntitySet="AgentLocation" />
+      <End Role="AgentLocationCoordinate" EntitySet="AgentLocationCoordinate" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AgentLocationCoordinate_Coordinate" Association="AgentSystemModel.FK_AgentLocationCoordinate_Coordinate">
+      <End Role="Coordinate" EntitySet="Coordinate" />
+      <End Role="AgentLocationCoordinate" EntitySet="AgentLocationCoordinate" />
+    </AssociationSet>
+    <EntitySet Name="Achievement" EntityType="AgentSystemModel.Achievement" />
+    <EntitySet Name="AchievementLevel" EntityType="AgentSystemModel.AchievementLevel" />
+    <AssociationSet Name="FK_AchievementLevel_Achievement" Association="AgentSystemModel.FK_AchievementLevel_Achievement">
+      <End Role="AchievementLevel" EntitySet="AchievementLevel" />
+      <End Role="Achievement" EntitySet="Achievement" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AgentAchievement_Agent" Association="AgentSystemModel.FK_AgentAchievement_Agent">
+      <End Role="Agent" EntitySet="Agent" />
+      <End Role="Achievement" EntitySet="Achievement" />
+    </AssociationSet>
+    <EntitySet Name="Message" EntityType="AgentSystemModel.Message" />
+    <AssociationSet Name="FK_Message_Agent" Association="AgentSystemModel.FK_Message_Agent">
+      <End Role="Agent" EntitySet="Agent" />
+      <End Role="Message" EntitySet="Message" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Message_MissionGoal" Association="AgentSystemModel.FK_Message_MissionGoal">
+      <End Role="Goal" EntitySet="Goal" />
+      <End Role="Message" EntitySet="Message" />
+    </AssociationSet>
+  </EntityContainer>
+  <Association Name="FK_MissionGoal_Mission">
+    <End Type="AgentSystemModel.Mission" Role="Mission" Multiplicity="1" />
+    <End Type="AgentSystemModel.Goal" Role="Goal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Mission">
+        <PropertyRef Name="MissionID" />
+      </Principal>
+      <Dependent Role="Goal">
+        <PropertyRef Name="MissionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="AgentLocationCoordinate">
+    <Key>
+      <PropertyRef Name="AgentLocationCoordinateID" />
+    </Key>
+    <Property Name="AgentLocationID" Type="Guid" Nullable="false" />
+    <Property Name="CoordinateID" Type="Guid" Nullable="false" />
+    <Property Name="AgentLocationCoordinateID" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="AgentLocation" Relationship="AgentSystemModel.FK_AgentLocationCoordinate_AgentLocation" FromRole="AgentLocationCoordinate" ToRole="AgentLocation" />
+    <NavigationProperty Name="Coordinate" Relationship="AgentSystemModel.FK_AgentLocationCoordinate_Coordinate" FromRole="AgentLocationCoordinate" ToRole="Coordinate" />
+  </EntityType>
+  <Association Name="FK_AgentLocationCoordinate_AgentLocation">
+    <End Type="AgentSystemModel.AgentLocation" Role="AgentLocation" Multiplicity="1" />
+    <End Type="AgentSystemModel.AgentLocationCoordinate" Role="AgentLocationCoordinate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AgentLocation">
+        <PropertyRef Name="AgentLocationID" />
+      </Principal>
+      <Dependent Role="AgentLocationCoordinate">
+        <PropertyRef Name="AgentLocationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AgentLocationCoordinate_Coordinate">
+    <End Type="AgentSystemModel.Coordinate" Role="Coordinate" Multiplicity="1" />
+    <End Type="AgentSystemModel.AgentLocationCoordinate" Role="AgentLocationCoordinate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Coordinate">
+        <PropertyRef Name="CoordinateID" />
+      </Principal>
+      <Dependent Role="AgentLocationCoordinate">
+        <PropertyRef Name="CoordinateID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Achievement">
+    <Key>
+      <PropertyRef Name="AchievementID" />
+    </Key>
+    <Property Name="AchievementID" Type="Guid" Nullable="false" />
+    <Property Name="AgentID" Type="Guid" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+    <Property Name="AchievementLevelID" Type="Guid" />
+    <NavigationProperty Name="AchievementLevel" Relationship="AgentSystemModel.FK_AchievementLevel_Achievement" FromRole="Achievement" ToRole="AchievementLevel" />
+    <NavigationProperty Name="Agent" Relationship="AgentSystemModel.FK_AgentAchievement_Agent" FromRole="Achievement" ToRole="Agent" />
+  </EntityType>
+  <EntityType Name="AchievementLevel">
+    <Key>
+      <PropertyRef Name="AchievementLevelID" />
+    </Key>
+    <Property Name="AchievementLevelID" Type="Guid" Nullable="false" />
+    <Property Name="Description" Type="Byte" />
+  </EntityType>
+  <Association Name="FK_AchievementLevel_Achievement">
+    <End Type="AgentSystemModel.AchievementLevel" Role="AchievementLevel" Multiplicity="0..1" />
+    <End Type="AgentSystemModel.Achievement" Role="Achievement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AchievementLevel">
+        <PropertyRef Name="AchievementLevelID" />
+      </Principal>
+      <Dependent Role="Achievement">
+        <PropertyRef Name="AchievementLevelID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AgentAchievement_Agent">
+    <End Type="AgentSystemModel.Agent" Role="Agent" Multiplicity="1" />
+    <End Type="AgentSystemModel.Achievement" Role="Achievement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Agent">
+        <PropertyRef Name="AgentID" />
+      </Principal>
+      <Dependent Role="Achievement">
+        <PropertyRef Name="AgentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Message">
+    <Key>
+      <PropertyRef Name="MessageID" />
+    </Key>
+    <Property Name="MessageID" Type="Guid" Nullable="false" />
+    <Property Name="GoalID" Type="Guid" Nullable="false" />
+    <Property Name="AgentID" Type="Guid" Nullable="false" />
+    <Property Name="MessageTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Message1" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Agent" Relationship="AgentSystemModel.FK_Message_Agent" FromRole="Message" ToRole="Agent" />
+    <NavigationProperty Name="Goal" Relationship="AgentSystemModel.FK_Message_MissionGoal" FromRole="Message" ToRole="Goal" />
+  </EntityType>
+  <Association Name="FK_Message_Agent">
+    <End Type="AgentSystemModel.Agent" Role="Agent" Multiplicity="1" />
+    <End Type="AgentSystemModel.Message" Role="Message" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Agent">
+        <PropertyRef Name="AgentID" />
+      </Principal>
+      <Dependent Role="Message">
+        <PropertyRef Name="AgentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Message_MissionGoal">
+    <End Type="AgentSystemModel.Goal" Role="Goal" Multiplicity="1" />
+    <End Type="AgentSystemModel.Message" Role="Message" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Goal">
+        <PropertyRef Name="GoalID" />
+      </Principal>
+      <Dependent Role="Message">
+        <PropertyRef Name="GoalID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

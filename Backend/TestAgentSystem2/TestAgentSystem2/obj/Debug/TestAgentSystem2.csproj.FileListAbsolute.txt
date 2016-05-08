@@ -1,0 +1,364 @@
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\ApplicationInsights.config
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\roslyn\csc.exe
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\roslyn\vbc.exe
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\roslyn\VBCSCompiler.exe
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\TestAgentSystem2.dll.config
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\TestAgentSystem2.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\TestAgentSystem2.pdb
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\Breeze.ContextProvider.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\Breeze.ContextProvider.EF6.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\Breeze.WebApi2.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\EntityFramework.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\EntityFramework.SqlServer.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.Web.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.Data.Edm.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.Data.OData.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\Newtonsoft.Json.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\System.Net.Http.Formatting.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\System.Spatial.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\System.Web.Http.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\System.Web.Http.OData.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\System.Web.Http.WebHost.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\WebActivatorEx.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\Breeze.ContextProvider.xml
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\Breeze.ContextProvider.EF6.xml
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\Breeze.WebApi2.xml
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\EntityFramework.xml
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\EntityFramework.SqlServer.xml
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.Web.xml
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.Data.Edm.xml
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.Data.OData.xml
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\Newtonsoft.Json.xml
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\System.Net.Http.Formatting.xml
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\System.Spatial.xml
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\System.Web.Http.xml
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\System.Web.Http.OData.xml
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\System.Web.Http.WebHost.xml
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\de\System.Spatial.resources.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\es\System.Spatial.resources.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\fr\System.Spatial.resources.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\it\System.Spatial.resources.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\ja\System.Spatial.resources.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\ko\System.Spatial.resources.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\ru\System.Spatial.resources.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\obj\Debug\TestAgentSystem2.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\obj\Debug\TestAgentSystem2.pdb
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\obj\Debug\TestAgentSystem2.csprojResolveAssemblyReference.cache
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\System.Web.Cors.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\System.Web.Http.Cors.dll
+C:\Users\Petru_000\Documents\Breeze\Test Projects\TestAgentSystem2\TestAgentSystem2\bin\System.Web.Http.Cors.xml
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\ApplicationInsights.config
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\roslyn\csc.exe
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\roslyn\System.Collections.Immutable.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\roslyn\System.Reflection.Metadata.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\roslyn\vbc.exe
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\roslyn\VBCSCompiler.exe
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\roslyn\VBCSCompiler.exe.config
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\TestAgentSystem2.dll.config
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\TestAgentSystem2.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\TestAgentSystem2.pdb
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\Breeze.ContextProvider.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\Breeze.ContextProvider.EF6.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\Breeze.WebApi2.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\EntityFramework.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\EntityFramework.SqlServer.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.DependencyCollector.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.Web.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.WindowsServer.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.ApplicationInsights.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.Data.Edm.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.Data.OData.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.Web.Infrastructure.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\Newtonsoft.Json.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\System.Net.Http.Formatting.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\System.Spatial.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\System.Web.Cors.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\System.Web.Http.Cors.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\System.Web.Http.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\System.Web.Http.OData.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\System.Web.Http.WebHost.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\WebActivatorEx.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\Breeze.ContextProvider.xml
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\Breeze.ContextProvider.EF6.xml
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\Breeze.WebApi2.xml
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\EntityFramework.xml
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\EntityFramework.SqlServer.xml
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.DependencyCollector.xml
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.Web.xml
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.WindowsServer.xml
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.ApplicationInsights.xml
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.Data.Edm.xml
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.Data.OData.xml
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\Newtonsoft.Json.xml
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\System.Net.Http.Formatting.xml
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\System.Spatial.xml
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\System.Web.Http.xml
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\System.Web.Http.Cors.xml
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\System.Web.Http.OData.xml
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\System.Web.Http.WebHost.xml
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\de\Microsoft.Data.OData.resources.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\es\Microsoft.Data.OData.resources.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\it\Microsoft.Data.OData.resources.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\de\System.Spatial.resources.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\es\System.Spatial.resources.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\fr\System.Spatial.resources.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\it\System.Spatial.resources.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\ja\System.Spatial.resources.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\ko\System.Spatial.resources.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\ru\System.Spatial.resources.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\zh-Hans\System.Spatial.resources.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\bin\zh-Hant\System.Spatial.resources.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\obj\Debug\TestAgentSystem2.csprojResolveAssemblyReference.cache
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\obj\Debug\TestAgentSystem2.dll
+C:\Data\Hackathons\AngularAttack\v3\AngularAttack\TestAgentSystem2\TestAgentSystem2\TestAgentSystem2\obj\Debug\TestAgentSystem2.pdb
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\ApplicationInsights.config
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\roslyn\csc.exe
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\roslyn\System.Collections.Immutable.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\roslyn\System.Reflection.Metadata.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\roslyn\vbc.exe
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\roslyn\VBCSCompiler.exe
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\roslyn\VBCSCompiler.exe.config
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\TestAgentSystem2.dll.config
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\TestAgentSystem2.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\TestAgentSystem2.pdb
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Breeze.ContextProvider.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Breeze.ContextProvider.EF6.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Breeze.WebApi2.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\EntityFramework.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\EntityFramework.SqlServer.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.DependencyCollector.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.Web.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.WindowsServer.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.ApplicationInsights.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.Data.Edm.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.Data.OData.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.Web.Infrastructure.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Newtonsoft.Json.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\System.Net.Http.Formatting.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\System.Spatial.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\System.Web.Cors.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\System.Web.Http.Cors.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\System.Web.Http.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\System.Web.Http.OData.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\System.Web.Http.WebHost.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\WebActivatorEx.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Breeze.ContextProvider.xml
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Breeze.ContextProvider.EF6.xml
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Breeze.WebApi2.xml
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\EntityFramework.xml
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\EntityFramework.SqlServer.xml
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.DependencyCollector.xml
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.Web.xml
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.WindowsServer.xml
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.ApplicationInsights.xml
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.Data.Edm.xml
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.Data.OData.xml
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Newtonsoft.Json.xml
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\System.Net.Http.Formatting.xml
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\System.Spatial.xml
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\System.Web.Http.xml
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\System.Web.Http.Cors.xml
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\System.Web.Http.OData.xml
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\System.Web.Http.WebHost.xml
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\de\Microsoft.Data.OData.resources.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\es\Microsoft.Data.OData.resources.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\it\Microsoft.Data.OData.resources.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\de\System.Spatial.resources.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\es\System.Spatial.resources.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\fr\System.Spatial.resources.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\it\System.Spatial.resources.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\ja\System.Spatial.resources.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\ko\System.Spatial.resources.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\ru\System.Spatial.resources.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\zh-Hans\System.Spatial.resources.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\zh-Hant\System.Spatial.resources.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\obj\Debug\TestAgentSystem2.dll
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\obj\Debug\TestAgentSystem2.pdb
+C:\Hackathon\v4\Backend\TestAgentSystem2\TestAgentSystem2\obj\Debug\TestAgentSystem2.csprojResolveAssemblyReference.cache
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\ApplicationInsights.config
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\roslyn\csc.exe
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\roslyn\System.Collections.Immutable.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\roslyn\System.Reflection.Metadata.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\roslyn\vbc.exe
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\roslyn\VBCSCompiler.exe
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\roslyn\VBCSCompiler.exe.config
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\TestAgentSystem2.dll.config
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\TestAgentSystem2.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\TestAgentSystem2.pdb
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Breeze.ContextProvider.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Breeze.ContextProvider.EF6.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Breeze.WebApi2.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\EntityFramework.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\EntityFramework.SqlServer.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.DependencyCollector.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.Web.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.WindowsServer.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.ApplicationInsights.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.Data.Edm.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.Data.OData.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.Web.Infrastructure.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Newtonsoft.Json.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\System.Net.Http.Formatting.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\System.Spatial.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\System.Web.Cors.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\System.Web.Http.Cors.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\System.Web.Http.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\System.Web.Http.OData.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\System.Web.Http.WebHost.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\WebActivatorEx.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Breeze.ContextProvider.xml
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Breeze.ContextProvider.EF6.xml
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Breeze.WebApi2.xml
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\EntityFramework.xml
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\EntityFramework.SqlServer.xml
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.DependencyCollector.xml
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.Web.xml
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.AI.WindowsServer.xml
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.ApplicationInsights.xml
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.Data.Edm.xml
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Microsoft.Data.OData.xml
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\Newtonsoft.Json.xml
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\System.Net.Http.Formatting.xml
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\System.Spatial.xml
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\System.Web.Http.xml
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\System.Web.Http.Cors.xml
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\System.Web.Http.OData.xml
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\System.Web.Http.WebHost.xml
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\de\Microsoft.Data.OData.resources.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\es\Microsoft.Data.OData.resources.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\it\Microsoft.Data.OData.resources.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\de\System.Spatial.resources.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\es\System.Spatial.resources.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\fr\System.Spatial.resources.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\it\System.Spatial.resources.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\ja\System.Spatial.resources.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\ko\System.Spatial.resources.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\ru\System.Spatial.resources.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\zh-Hans\System.Spatial.resources.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\bin\zh-Hant\System.Spatial.resources.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\obj\Debug\TestAgentSystem2.csprojResolveAssemblyReference.cache
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\obj\Debug\TestAgentSystem2.dll
+C:\Data\Hackathons\AngularAttack\v5\v4\v4\Backend\TestAgentSystem2\TestAgentSystem2\obj\Debug\TestAgentSystem2.pdb

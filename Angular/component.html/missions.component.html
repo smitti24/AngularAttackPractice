@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Agents</h3>
+        </div>
+        <div class="panel-body">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Mission</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let mission of Missions | async; let i=index;" (click)="onSelect(mission)">
+                        <td>{{i+1}}</td>
+                        <td>{{mission?.MissionName}}</td>
+                        <td>{{mission?.Description}}</td>
+                        <td>{{mission?.MissionStatus?.MissionStatusText}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

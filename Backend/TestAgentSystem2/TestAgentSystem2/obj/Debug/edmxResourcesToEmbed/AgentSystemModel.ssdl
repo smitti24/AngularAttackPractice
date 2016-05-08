@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AgentSystemModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Achievement">
+    <Key>
+      <PropertyRef Name="AchievementID" />
+    </Key>
+    <Property Name="AchievementID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="AgentID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="Date" Type="datetime" />
+    <Property Name="AchievementLevelID" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="AchievementLevel">
+    <Key>
+      <PropertyRef Name="AchievementLevelID" />
+    </Key>
+    <Property Name="AchievementLevelID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Description" Type="tinyint" />
+  </EntityType>
+  <EntityType Name="Agent">
+    <Key>
+      <PropertyRef Name="AgentID" />
+    </Key>
+    <Property Name="AgentID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Codename" Type="varchar(max)" Nullable="false" />
+    <Property Name="EncyptedPassword" Type="varchar(max)" Nullable="false" />
+    <Property Name="AgentStatusID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Photo" Type="varbinary(max)" />
+    <Property Name="Name" Type="varchar(max)" />
+    <Property Name="Surname" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="AgentLocation">
+    <Key>
+      <PropertyRef Name="AgentLocationID" />
+    </Key>
+    <Property Name="AgentLocationID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DateRecorded" Type="datetime" Nullable="false" />
+    <Property Name="AgentID" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AgentLocationCoordinate">
+    <Key>
+      <PropertyRef Name="AgentLocationCoordinateID" />
+    </Key>
+    <Property Name="AgentLocationID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="CoordinateID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="AgentLocationCoordinateID" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AgentStatus">
+    <Key>
+      <PropertyRef Name="AgentStatusID" />
+    </Key>
+    <Property Name="AgentStatusID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="AgentStatus" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Coordinate">
+    <Key>
+      <PropertyRef Name="CoordinateID" />
+    </Key>
+    <Property Name="CoordinateID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="X" Type="decimal" Precision="18" Scale="9" Nullable="false" />
+    <Property Name="Y" Type="decimal" Precision="18" Scale="9" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Goal">
+    <Key>
+      <PropertyRef Name="GoalID" />
+    </Key>
+    <Property Name="GoalID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="MissionID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="AgentID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="CoordinateID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="AgentFeedback" Type="varchar(max)" />
+    <Property Name="AgentCompletedFlag" Type="bit" Nullable="false" />
+    <Property Name="CompletionDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Message">
+    <Key>
+      <PropertyRef Name="MessageID" />
+    </Key>
+    <Property Name="MessageID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="GoalID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="AgentID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="MessageTime" Type="datetime" Nullable="false" />
+    <Property Name="Message" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Mission">
+    <Key>
+      <PropertyRef Name="MissionID" />
+    </Key>
+    <Property Name="MissionID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="MissionName" Type="varchar(max)" Nullable="false" />
+    <Property Name="Description" Type="varchar(max)" Nullable="false" />
+    <Property Name="MissionStatusID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="CompletionDate" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="MissionStatus">
+    <Key>
+      <PropertyRef Name="MissionStatusID" />
+    </Key>
+    <Property Name="MissionStatusID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="MissionStatus" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_AchievementLevel_Achievement">
+    <End Role="AchievementLevel" Type="Self.AchievementLevel" Multiplicity="0..1" />
+    <End Role="Achievement" Type="Self.Achievement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AchievementLevel">
+        <PropertyRef Name="AchievementLevelID" />
+      </Principal>
+      <Dependent Role="Achievement">
+        <PropertyRef Name="AchievementLevelID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AgentAchievement_Agent">
+    <End Role="Agent" Type="Self.Agent" Multiplicity="1" />
+    <End Role="Achievement" Type="Self.Achievement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Agent">
+        <PropertyRef Name="AgentID" />
+      </Principal>
+      <Dependent Role="Achievement">
+        <PropertyRef Name="AgentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AgentLocation_Agent">
+    <End Role="Agent" Type="Self.Agent" Multiplicity="1" />
+    <End Role="AgentLocation" Type="Self.AgentLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Agent">
+        <PropertyRef Name="AgentID" />
+      </Principal>
+      <Dependent Role="AgentLocation">
+        <PropertyRef Name="AgentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AgentLocationCoordinate_AgentLocation">
+    <End Role="AgentLocation" Type="Self.AgentLocation" Multiplicity="1" />
+    <End Role="AgentLocationCoordinate" Type="Self.AgentLocationCoordinate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AgentLocation">
+        <PropertyRef Name="AgentLocationID" />
+      </Principal>
+      <Dependent Role="AgentLocationCoordinate">
+        <PropertyRef Name="AgentLocationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AgentLocationCoordinate_Coordinate">
+    <End Role="Coordinate" Type="Self.Coordinate" Multiplicity="1" />
+    <End Role="AgentLocationCoordinate" Type="Self.AgentLocationCoordinate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Coordinate">
+        <PropertyRef Name="CoordinateID" />
+      </Principal>
+      <Dependent Role="AgentLocationCoordinate">
+        <PropertyRef Name="CoordinateID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AgentStatus_Agent">
+    <End Role="AgentStatus" Type="Self.AgentStatus" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Agent" Type="Self.Agent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AgentStatus">
+        <PropertyRef Name="AgentStatusID" />
+      </Principal>
+      <Dependent Role="Agent">
+        <PropertyRef Name="AgentStatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Message_Agent">
+    <End Role="Agent" Type="Self.Agent" Multiplicity="1" />
+    <End Role="Message" Type="Self.Message" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Agent">
+        <PropertyRef Name="AgentID" />
+      </Principal>
+      <Dependent Role="Message">
+        <PropertyRef Name="AgentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Message_MissionGoal">
+    <End Role="Goal" Type="Self.Goal" Multiplicity="1" />
+    <End Role="Message" Type="Self.Message" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Goal">
+        <PropertyRef Name="GoalID" />
+      </Principal>
+      <Dependent Role="Message">
+        <PropertyRef Name="GoalID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Mission_MissionStatus">
+    <End Role="MissionStatus" Type="Self.MissionStatus" Multiplicity="1" />
+    <End Role="Mission" Type="Self.Mission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MissionStatus">
+        <PropertyRef Name="MissionStatusID" />
+      </Principal>
+      <Dependent Role="Mission">
+        <PropertyRef Name="MissionStatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MissionGoal_Agent">
+    <End Role="Agent" Type="Self.Agent" Multiplicity="1" />
+    <End Role="Goal" Type="Self.Goal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Agent">
+        <PropertyRef Name="AgentID" />
+      </Principal>
+      <Dependent Role="Goal">
+        <PropertyRef Name="AgentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MissionGoal_Coordinate">
+    <End Role="Coordinate" Type="Self.Coordinate" Multiplicity="1" />
+    <End Role="Goal" Type="Self.Goal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Coordinate">
+        <PropertyRef Name="CoordinateID" />
+      </Principal>
+      <Dependent Role="Goal">
+        <PropertyRef Name="CoordinateID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MissionGoal_Mission">
+    <End Role="Mission" Type="Self.Mission" Multiplicity="1" />
+    <End Role="Goal" Type="Self.Goal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Mission">
+        <PropertyRef Name="MissionID" />
+      </Principal>
+      <Dependent Role="Goal">
+        <PropertyRef Name="MissionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="AgentSystemModelStoreContainer">
+    <EntitySet Name="Achievement" EntityType="Self.Achievement" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AchievementLevel" EntityType="Self.AchievementLevel" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Agent" EntityType="Self.Agent" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AgentLocation" EntityType="Self.AgentLocation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AgentLocationCoordinate" EntityType="Self.AgentLocationCoordinate" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AgentStatus" EntityType="Self.AgentStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Coordinate" EntityType="Self.Coordinate" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Goal" EntityType="Self.Goal" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Message" EntityType="Self.Message" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Mission" EntityType="Self.Mission" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MissionStatus" EntityType="Self.MissionStatus" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_AchievementLevel_Achievement" Association="Self.FK_AchievementLevel_Achievement">
+      <End Role="AchievementLevel" EntitySet="AchievementLevel" />
+      <End Role="Achievement" EntitySet="Achievement" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AgentAchievement_Agent" Association="Self.FK_AgentAchievement_Agent">
+      <End Role="Agent" EntitySet="Agent" />
+      <End Role="Achievement" EntitySet="Achievement" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AgentLocation_Agent" Association="Self.FK_AgentLocation_Agent">
+      <End Role="Agent" EntitySet="Agent" />
+      <End Role="AgentLocation" EntitySet="AgentLocation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AgentLocationCoordinate_AgentLocation" Association="Self.FK_AgentLocationCoordinate_AgentLocation">
+      <End Role="AgentLocation" EntitySet="AgentLocation" />
+      <End Role="AgentLocationCoordinate" EntitySet="AgentLocationCoordinate" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AgentLocationCoordinate_Coordinate" Association="Self.FK_AgentLocationCoordinate_Coordinate">
+      <End Role="Coordinate" EntitySet="Coordinate" />
+      <End Role="AgentLocationCoordinate" EntitySet="AgentLocationCoordinate" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AgentStatus_Agent" Association="Self.FK_AgentStatus_Agent">
+      <End Role="AgentStatus" EntitySet="AgentStatus" />
+      <End Role="Agent" EntitySet="Agent" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Message_Agent" Association="Self.FK_Message_Agent">
+      <End Role="Agent" EntitySet="Agent" />
+      <End Role="Message" EntitySet="Message" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Message_MissionGoal" Association="Self.FK_Message_MissionGoal">
+      <End Role="Goal" EntitySet="Goal" />
+      <End Role="Message" EntitySet="Message" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Mission_MissionStatus" Association="Self.FK_Mission_MissionStatus">
+      <End Role="MissionStatus" EntitySet="MissionStatus" />
+      <End Role="Mission" EntitySet="Mission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MissionGoal_Agent" Association="Self.FK_MissionGoal_Agent">
+      <End Role="Agent" EntitySet="Agent" />
+      <End Role="Goal" EntitySet="Goal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MissionGoal_Coordinate" Association="Self.FK_MissionGoal_Coordinate">
+      <End Role="Coordinate" EntitySet="Coordinate" />
+      <End Role="Goal" EntitySet="Goal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MissionGoal_Mission" Association="Self.FK_MissionGoal_Mission">
+      <End Role="Mission" EntitySet="Mission" />
+      <End Role="Goal" EntitySet="Goal" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AgentSystemModelStoreContainer" CdmEntityContainer="AgentSystem">
+    <EntitySetMapping Name="Agent">
+      <EntityTypeMapping TypeName="AgentSystemModel.Agent">
+        <MappingFragment StoreEntitySet="Agent">
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="AgentID" ColumnName="AgentID" />
+          <ScalarProperty Name="Codename" ColumnName="Codename" />
+          <ScalarProperty Name="EncyptedPassword" ColumnName="EncyptedPassword" />
+          <ScalarProperty Name="AgentStatusID" ColumnName="AgentStatusID" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AgentLocation">
+      <EntityTypeMapping TypeName="AgentSystemModel.AgentLocation">
+        <MappingFragment StoreEntitySet="AgentLocation">
+          <ScalarProperty Name="AgentLocationID" ColumnName="AgentLocationID" />
+          <ScalarProperty Name="DateRecorded" ColumnName="DateRecorded" />
+          <ScalarProperty Name="AgentID" ColumnName="AgentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AgentStatus">
+      <EntityTypeMapping TypeName="AgentSystemModel.AgentStatus">
+        <MappingFragment StoreEntitySet="AgentStatus">
+          <ScalarProperty Name="AgentStatusID" ColumnName="AgentStatusID" />
+          <ScalarProperty Name="AgentStatusText" ColumnName="AgentStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Coordinate">
+      <EntityTypeMapping TypeName="AgentSystemModel.Coordinate">
+        <MappingFragment StoreEntitySet="Coordinate">
+          <ScalarProperty Name="CoordinateID" ColumnName="CoordinateID" />
+          <ScalarProperty Name="X" ColumnName="X" />
+          <ScalarProperty Name="Y" ColumnName="Y" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Goal">
+      <EntityTypeMapping TypeName="AgentSystemModel.Goal">
+        <MappingFragment StoreEntitySet="Goal">
+          <ScalarProperty Name="GoalID" ColumnName="GoalID" />
+          <ScalarProperty Name="MissionID" ColumnName="MissionID" />
+          <ScalarProperty Name="AgentID" ColumnName="AgentID" />
+          <ScalarProperty Name="CoordinateID" ColumnName="CoordinateID" />
+          <ScalarProperty Name="AgentFeedback" ColumnName="AgentFeedback" />
+          <ScalarProperty Name="AgentCompletedFlag" ColumnName="AgentCompletedFlag" />
+          <ScalarProperty Name="CompletionDate" ColumnName="CompletionDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Mission">
+      <EntityTypeMapping TypeName="AgentSystemModel.Mission">
+        <MappingFragment StoreEntitySet="Mission">
+          <ScalarProperty Name="MissionID" ColumnName="MissionID" />
+          <ScalarProperty Name="MissionName" ColumnName="MissionName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="MissionStatusID" ColumnName="MissionStatusID" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CompletionDate" ColumnName="CompletionDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MissionStatus">
+      <EntityTypeMapping TypeName="AgentSystemModel.MissionStatus">
+        <MappingFragment StoreEntitySet="MissionStatus">
+          <ScalarProperty Name="MissionStatusID" ColumnName="MissionStatusID" />
+          <ScalarProperty Name="MissionStatusText" ColumnName="MissionStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AgentLocationCoordinate">
+      <EntityTypeMapping TypeName="AgentSystemModel.AgentLocationCoordinate">
+        <MappingFragment StoreEntitySet="AgentLocationCoordinate">
+          <ScalarProperty Name="AgentLocationCoordinateID" ColumnName="AgentLocationCoordinateID" />
+          <ScalarProperty Name="CoordinateID" ColumnName="CoordinateID" />
+          <ScalarProperty Name="AgentLocationID" ColumnName="AgentLocationID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Achievement">
+      <EntityTypeMapping TypeName="AgentSystemModel.Achievement">
+        <MappingFragment StoreEntitySet="Achievement">
+          <ScalarProperty Name="AchievementLevelID" ColumnName="AchievementLevelID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="AgentID" ColumnName="AgentID" />
+          <ScalarProperty Name="AchievementID" ColumnName="AchievementID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AchievementLevel">
+      <EntityTypeMapping TypeName="AgentSystemModel.AchievementLevel">
+        <MappingFragment StoreEntitySet="AchievementLevel">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="AchievementLevelID" ColumnName="AchievementLevelID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Message">
+      <EntityTypeMapping TypeName="AgentSystemModel.Message">
+        <MappingFragment StoreEntitySet="Message">
+          <ScalarProperty Name="Message1" ColumnName="Message" />
+          <ScalarProperty Name="MessageTime" ColumnName="MessageTime" />
+          <ScalarProperty Name="AgentID" ColumnName="AgentID" />
+          <ScalarProperty Name="GoalID" ColumnName="GoalID" />
+          <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,46 @@
+CREATE TABLE [Agent] ([AgentID] uniqueidentifier NOT NULL , [Codename] Varchar(max) NOT NULL , [EncyptedPassword] Varchar(max) NOT NULL , [AgentStatusID] uniqueidentifier NOT NULL , [Photo] varbinary(Max) NULL , [Name] Varchar(max) NULL , [Surname] Varchar(max) NULL , CONSTRAINT [PK_Agent] PRIMARY KEY ([AgentID]))
+GO
+CREATE TABLE [AgentStatus] ([AgentStatusID] uniqueidentifier NOT NULL , [AgentStatus] Varchar(max) NOT NULL , CONSTRAINT [PK_AgentStatus] PRIMARY KEY ([AgentStatusID]))
+GO
+CREATE TABLE [AgentLocation] ([AgentLocationID] uniqueidentifier NOT NULL , [DateRecorded] datetime NOT NULL , [AgentID] uniqueidentifier NOT NULL , CONSTRAINT [PK_AgentLocation] PRIMARY KEY ([AgentLocationID]))
+GO
+CREATE TABLE [Coordinate] ([CoordinateID] uniqueidentifier NOT NULL , [X] decimal(18,9) NOT NULL , [Y] decimal(18,9) NOT NULL , CONSTRAINT [PK_Coordinate] PRIMARY KEY ([CoordinateID]))
+GO
+CREATE TABLE [AgentLocationCoordinate] ([AgentLocationID] uniqueidentifier NOT NULL , [CoordinateID] uniqueidentifier NOT NULL , [AgentLocationCoordinateID] uniqueidentifier NOT NULL , CONSTRAINT [PK_AgentLocationCoordinate] PRIMARY KEY ([AgentLocationCoordinateID]))
+GO
+CREATE TABLE [Mission] ([MissionID] uniqueidentifier NOT NULL , [MissionName] Varchar(max) NOT NULL , [Description] Varchar(max) NOT NULL , [MissionStatusID] uniqueidentifier NOT NULL , [CreationDate] datetime NOT NULL , [CompletionDate] Varchar(max) NULL , CONSTRAINT [PK_Mission] PRIMARY KEY ([MissionID]))
+GO
+CREATE TABLE [MissionStatus] ([MissionStatusID] uniqueidentifier NOT NULL , [MissionStatus] Varchar(max) NOT NULL , CONSTRAINT [PK_MissionStatus] PRIMARY KEY ([MissionStatusID]))
+GO
+CREATE TABLE [Goal] ([GoalID] uniqueidentifier NOT NULL , [MissionID] uniqueidentifier NOT NULL , [AgentID] uniqueidentifier NOT NULL , [CoordinateID] uniqueidentifier NOT NULL , [AgentFeedback] Varchar(max) NULL , [AgentCompletedFlag] bit NOT NULL , [CompletionDate] datetime NULL , CONSTRAINT [PK_MissionGoalID] PRIMARY KEY ([GoalID]))
+GO
+CREATE TABLE [Message] ([MessageID] uniqueidentifier NOT NULL , [GoalID] uniqueidentifier NOT NULL , [AgentID] uniqueidentifier NOT NULL , [MessageTime] datetime NOT NULL , [Message] Varchar(max) NOT NULL , CONSTRAINT [PK_MessageID] PRIMARY KEY ([MessageID]))
+GO
+CREATE TABLE [Achievement] ([AchievementID] uniqueidentifier NOT NULL , [AgentID] uniqueidentifier NOT NULL , [Description] Varchar(max) NULL , [Date] datetime NULL , [AchievementLevelID] uniqueidentifier NULL , CONSTRAINT [PK_Achievement] PRIMARY KEY ([AchievementID]), CONSTRAINT [FK_AchievementLevel] UNIQUE ([AchievementLevelID]))
+GO
+CREATE TABLE [AchievementLevel] ([AchievementLevelID] uniqueidentifier NOT NULL , [Description] tinyint NULL , CONSTRAINT [PK_AchievementLevel] PRIMARY KEY ([AchievementLevelID]))
+GO
+ALTER TABLE [AgentLocation] ADD CONSTRAINT [FK_AgentLocation_Agent] FOREIGN KEY ([AgentID]) REFERENCES [Agent] ([AgentID])
+GO
+ALTER TABLE [Goal] ADD CONSTRAINT [FK_MissionGoal_Agent] FOREIGN KEY ([AgentID]) REFERENCES [Agent] ([AgentID])
+GO
+ALTER TABLE [Message] ADD CONSTRAINT [FK_Message_Agent] FOREIGN KEY ([AgentID]) REFERENCES [Agent] ([AgentID])
+GO
+ALTER TABLE [Agent] ADD CONSTRAINT [FK_AgentStatus_Agent] FOREIGN KEY ([AgentStatusID]) REFERENCES [AgentStatus] ([AgentStatusID]) ON UPDATE CASCADE ON DELETE CASCADE
+GO
+ALTER TABLE [AgentLocationCoordinate] ADD CONSTRAINT [FK_AgentLocationCoordinate_AgentLocation] FOREIGN KEY ([AgentLocationID]) REFERENCES [AgentLocation] ([AgentLocationID])
+GO
+ALTER TABLE [AgentLocationCoordinate] ADD CONSTRAINT [FK_AgentLocationCoordinate_Coordinate] FOREIGN KEY ([CoordinateID]) REFERENCES [Coordinate] ([CoordinateID])
+GO
+ALTER TABLE [Goal] ADD CONSTRAINT [FK_MissionGoal_Coordinate] FOREIGN KEY ([CoordinateID]) REFERENCES [Coordinate] ([CoordinateID])
+GO
+ALTER TABLE [Goal] ADD CONSTRAINT [FK_MissionGoal_Mission] FOREIGN KEY ([MissionID]) REFERENCES [Mission] ([MissionID])
+GO
+ALTER TABLE [Mission] ADD CONSTRAINT [FK_Mission_MissionStatus] FOREIGN KEY ([MissionStatusID]) REFERENCES [MissionStatus] ([MissionStatusID])
+GO
+ALTER TABLE [Message] ADD CONSTRAINT [FK_Message_MissionGoal] FOREIGN KEY ([GoalID]) REFERENCES [Goal] ([GoalID])
+GO
+ALTER TABLE [Achievement] ADD CONSTRAINT [FK_AgentAchievement_Agent] FOREIGN KEY ([AgentID]) REFERENCES [Agent] ([AgentID])
+GO
+ALTER TABLE [Achievement] ADD CONSTRAINT [FK_AchievementLevel_Achievement] FOREIGN KEY ([AchievementLevelID]) REFERENCES [AchievementLevel] ([AchievementLevelID])
+GO
