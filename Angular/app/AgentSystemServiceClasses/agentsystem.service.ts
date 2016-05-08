@@ -13,7 +13,7 @@ export class AgentSystemService {
     constructor()
     {
         // Create a new entity manager instance ...
-        this.EntityManager = new breeze.EntityManager('http://localhost/AgentSystem/breeze/AgentSystem');
+        this.EntityManager = new breeze.EntityManager('http://sdrsa34/AgentSystem/breeze/AgentSystem');
     }
     
     // Add ...

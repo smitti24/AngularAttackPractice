@@ -26,6 +26,7 @@ export class AgentsComponent {
     constructor(private _AgentService: AgentService, private _router: Router) {
         this.Agents = this._AgentService.All;
     }
+    
 }
 
 
