@@ -9,10 +9,9 @@ import {Observer} from 'rxjs/Observer';
 export class AgentService {
     All: Observable<Agent[]>;
     AgentsObserver: Observer<Agent[]>; 
-        
+    CanNavigate:boolean;  
     // Constructor ...
     constructor(private _AgentSystemService: AgentSystemService) {
-        
         // Create an observable for agents ...
         this.All = new Observable(observer => this.AgentsObserver = observer);
          
@@ -50,5 +49,13 @@ export class AgentService {
         
         // Create a new agent via the entity manager and return it ...
         return <Agent><Object>this._AgentSystemService.EntityManager.createEntity('Agent', initialValues);
+    }
+    
+    setValue(val) {
+        this.CanNavigate = val;
+    }
+
+    getValue() {
+        return this.CanNavigate;
     }
 }

@@ -1,4 +1,4 @@
-System.register(['angular2/core', './AgentSystemServiceClasses/mission.service', 'angular2/router'], function(exports_1, context_1) {
+System.register(['angular2/core', './AgentSystemServiceClasses/mission.service', 'angular2/router', './AgentSystemServiceClasses/agent.service'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', './AgentSystemServiceClasses/mission.service',
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, mission_service_1, router_1;
+    var core_1, mission_service_1, router_1, agent_service_1;
     var MissionsComponent;
     return {
         setters:[
@@ -22,14 +22,20 @@ System.register(['angular2/core', './AgentSystemServiceClasses/mission.service',
             },
             function (router_1_1) {
                 router_1 = router_1_1;
+            },
+            function (agent_service_1_1) {
+                agent_service_1 = agent_service_1_1;
             }],
         execute: function() {
             MissionsComponent = (function () {
                 // Constructor ...
-                function MissionsComponent(_MissionService, _router) {
+                function MissionsComponent(_MissionService, _router, _agentService) {
                     this._MissionService = _MissionService;
                     this._router = _router;
+                    this._agentService = _agentService;
                     this.Missions = this._MissionService.All;
+                    this._agentService.setValue(true);
+                    console.log(this._agentService.getValue());
                 }
                 // onSelect ...    
                 MissionsComponent.prototype.onSelect = function (mission) {
@@ -41,9 +47,9 @@ System.register(['angular2/core', './AgentSystemServiceClasses/mission.service',
                         selector: 'missions',
                         templateUrl: '../component.html/missions.component.html',
                         directives: [],
-                        providers: [mission_service_1.MissionService]
+                        providers: [mission_service_1.MissionService, agent_service_1.AgentService]
                     }), 
-                    __metadata('design:paramtypes', [mission_service_1.MissionService, router_1.Router])
+                    __metadata('design:paramtypes', [mission_service_1.MissionService, router_1.Router, agent_service_1.AgentService])
                 ], MissionsComponent);
                 return MissionsComponent;
             }());

@@ -12,8 +12,8 @@
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li [class.active]="router.isRouteActive(router.generate(['/Agents']))"><a [routerLink]="['Agents']">Agents </a></li>
-                <li [class.active]="router.isRouteActive(router.generate(['/Missions']))"><a [routerLink]="['Missions']">Missions</a></li>
+                <li [class.active]="router.isRouteActive(router.generate(['/Agents']))"><a (click)="navigateTo('Agents')">Agents </a></li>
+                <li [class.active]="router.isRouteActive(router.generate(['/Missions']))"><a (click)="navigateTo('Missions')">Missions</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a>Agent Q</a></li>

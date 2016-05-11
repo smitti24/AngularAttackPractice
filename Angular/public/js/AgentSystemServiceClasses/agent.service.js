@@ -62,6 +62,12 @@ System.register(['angular2/core', './agentsystem.service', 'rxjs/Observable'], f
                     // Create a new agent via the entity manager and return it ...
                     return this._AgentSystemService.EntityManager.createEntity('Agent', initialValues);
                 };
+                AgentService.prototype.setValue = function (val) {
+                    this.CanNavigate = val;
+                };
+                AgentService.prototype.getValue = function () {
+                    return this.CanNavigate;
+                };
                 AgentService = __decorate([
                     core_1.Injectable(), 
                     __metadata('design:paramtypes', [agentsystem_service_1.AgentSystemService])

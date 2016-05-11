@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/router'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/router', './AgentSystemServiceClasses/agent.service'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/router'], function(exports_1, contex
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1;
+    var core_1, router_1, agent_service_1;
     var NavbarComponent;
     return {
         setters:[
@@ -19,19 +19,31 @@ System.register(['angular2/core', 'angular2/router'], function(exports_1, contex
             },
             function (router_1_1) {
                 router_1 = router_1_1;
+            },
+            function (agent_service_1_1) {
+                agent_service_1 = agent_service_1_1;
             }],
         execute: function() {
             NavbarComponent = (function () {
-                function NavbarComponent(_router) {
+                function NavbarComponent(_router, _agentService) {
+                    this._agentService = _agentService;
                     this.router = _router;
+                    localStorage.setItem('canNavigate', 'true');
                 }
+                NavbarComponent.prototype.navigateTo = function (routerURL) {
+                    console.log(routerURL + "-" + localStorage.getItem('canNavigate'));
+                    if (localStorage.getItem('canNavigate') == 'true') {
+                        this.router.navigate([routerURL]);
+                    }
+                };
                 NavbarComponent = __decorate([
                     core_1.Component({
                         selector: 'my-navbar',
                         templateUrl: '../component.html/navbar.component.html',
-                        directives: [router_1.ROUTER_DIRECTIVES]
+                        directives: [router_1.ROUTER_DIRECTIVES],
+                        providers: [agent_service_1.AgentService]
                     }), 
-                    __metadata('design:paramtypes', [router_1.Router])
+                    __metadata('design:paramtypes', [router_1.Router, agent_service_1.AgentService])
                 ], NavbarComponent);
                 return NavbarComponent;
             }());

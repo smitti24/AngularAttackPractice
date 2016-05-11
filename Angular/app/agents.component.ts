@@ -24,6 +24,8 @@ export class AgentsComponent {
 
     // Constructor ...
     constructor(private _AgentService: AgentService, private _router: Router) {
+        _AgentService.setValue(true)
+        console.log(this._AgentService.getValue())
         this.Agents = this._AgentService.All;
     }
     

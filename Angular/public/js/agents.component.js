@@ -29,6 +29,8 @@ System.register(['angular2/core', './AgentSystemServiceClasses/agent.service', '
                 function AgentsComponent(_AgentService, _router) {
                     this._AgentService = _AgentService;
                     this._router = _router;
+                    _AgentService.setValue(true);
+                    console.log(this._AgentService.getValue());
                     this.Agents = this._AgentService.All;
                 }
                 // onSelect ...

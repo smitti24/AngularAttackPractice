@@ -40,6 +40,8 @@ System.register(['angular2/core', 'angular2/common', 'angular2/router', './Agent
                     this.IsEditable = false;
                     // Load the agent ... 
                     //this.Agent = this._AgentService.getAgentByID(this._routeParams.get('id'));
+                    this._AgentService.setValue(true);
+                    console.log(this._AgentService.getValue());
                     this._AgentService.getAgentByID(this._routeParams.get('id')).subscribe(function (agent) { return _this.Agent = agent; });
                     this.form = formBuilder.group({
                         codename: ['', common_1.Validators.required],
@@ -49,11 +51,14 @@ System.register(['angular2/core', 'angular2/common', 'angular2/router', './Agent
                 }
                 AgentComponent.prototype.editAgent = function () {
                     this.IsEditable = !this.IsEditable;
+                    localStorage.setItem("canNavigate", 'false');
+                    console.log(localStorage.getItem('canNavigate'));
                 };
                 AgentComponent.prototype.saveAgent = function () {
                     if (this.form.valid) {
                         console.log(this.form.value);
                         this._agentSystem.saveChanges();
+                        localStorage.setItem("canNavigate", 'true');
                         this.IsEditable = !this.IsEditable;
                     }
                 };
