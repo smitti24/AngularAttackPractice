@@ -31,16 +31,31 @@
                         <label for="codename">Codename:</label>
                         <input id="codename" class="form-control" type="text" [(ngModel)]="Agent.Codename" ngControl="codename" #codename="ngForm">
                     </div>
+                    <div *ngIf="codename.touched">
+                        <div *ngIf="!codename.valid" class="alert alert-danger">
+                            <strong>Codename is required</strong>
+                        </div>
+                    </div>
                     <div class="form-group">
                         <label for="name">Name:</label>
-                        <input id="codename" class="form-control" type="text" [(ngModel)]="Agent.Name">
+                        <input id="codename" class="form-control" type="text" [(ngModel)]="Agent.Name" ngControl="name" #name="ngForm">
+                    </div>
+                    <div *ngIf="name.touched">
+                        <div *ngIf="!name.valid" class="alert alert-danger">
+                            <strong>Name is required</strong>
+                        </div>
                     </div>
                     <div class="form-group">
                         <label for="Surname">Name:</label>
-                        <input id="Surname" class="form-control" type="text" [(ngModel)]="Agent.Surname">
+                        <input id="Surname" class="form-control" type="text" [(ngModel)]="Agent.Surname" ngControl="surname" #surname="ngForm">
                     </div>
+                    <div *ngIf="surname.touched">
+                        <div *ngIf="!surname.valid" class="alert alert-danger">
+                            <strong>Surname is required</strong>
+                        </div>
+                    </div>                    
                 </form>
-                <button type="submit" class="btn btn-primary" (click)="editAgent()">Save</button>
+                <button type="submit" class="btn btn-primary" (click)="saveAgent()">Save</button>
             </div>
         </div>
     </div>

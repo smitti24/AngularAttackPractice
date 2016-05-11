@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/common', 'angular2/router', './AgentSystemServiceClasses/agent.service'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/common', 'angular2/router', './AgentSystemServiceClasses/agent.service', './AgentSystemServiceClasses/agentsystem.service'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/common', 'angular2/router', './Agent
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, common_1, router_1, agent_service_1;
+    var core_1, common_1, router_1, agent_service_1, agentsystem_service_1;
     var AgentComponent;
     return {
         setters:[
@@ -25,24 +25,37 @@ System.register(['angular2/core', 'angular2/common', 'angular2/router', './Agent
             },
             function (agent_service_1_1) {
                 agent_service_1 = agent_service_1_1;
+            },
+            function (agentsystem_service_1_1) {
+                agentsystem_service_1 = agentsystem_service_1_1;
             }],
         execute: function() {
             AgentComponent = (function () {
-                function AgentComponent(_AgentService, _router, _routeParams, formBuilder) {
+                function AgentComponent(_AgentService, _router, _routeParams, formBuilder, _agentSystem) {
                     var _this = this;
                     this._AgentService = _AgentService;
                     this._router = _router;
                     this._routeParams = _routeParams;
+                    this._agentSystem = _agentSystem;
                     this.IsEditable = false;
                     // Load the agent ... 
                     //this.Agent = this._AgentService.getAgentByID(this._routeParams.get('id'));
                     this._AgentService.getAgentByID(this._routeParams.get('id')).subscribe(function (agent) { return _this.Agent = agent; });
                     this.form = formBuilder.group({
-                        codename: ['', common_1.Validators.required]
+                        codename: ['', common_1.Validators.required],
+                        name: ['', common_1.Validators.required],
+                        surname: ['', common_1.Validators.required]
                     });
                 }
                 AgentComponent.prototype.editAgent = function () {
                     this.IsEditable = !this.IsEditable;
+                };
+                AgentComponent.prototype.saveAgent = function () {
+                    if (this.form.valid) {
+                        console.log(this.form.value);
+                        this._agentSystem.saveChanges();
+                        this.IsEditable = !this.IsEditable;
+                    }
                 };
                 AgentComponent = __decorate([
                     core_1.Component({
@@ -51,7 +64,7 @@ System.register(['angular2/core', 'angular2/common', 'angular2/router', './Agent
                         directives: [],
                         providers: [agent_service_1.AgentService]
                     }), 
-                    __metadata('design:paramtypes', [agent_service_1.AgentService, router_1.Router, router_1.RouteParams, common_1.FormBuilder])
+                    __metadata('design:paramtypes', [agent_service_1.AgentService, router_1.Router, router_1.RouteParams, common_1.FormBuilder, agentsystem_service_1.AgentSystemService])
                 ], AgentComponent);
                 return AgentComponent;
             }());
